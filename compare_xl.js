@@ -1,10 +1,10 @@
 function viewRecords(id) {
-    // set up objects 
-    var r1 = document.getElementById('record_1');
-    var r2 = document.getElementById('record_2');
-    var h1 = document.getElementById('compare');
-    var headers = document.getElementById('header').getElementsByTagName('td');
-    var r1Data = document.getElementById('r' + id).getElementsByTagName('td');
+    // set up objects
+    var r1 = $('#record_1');
+    var r2 = $('#record_2');
+    var h1 = $('#compare');
+    var headers = $('#header td');
+    var r1Data = $('#r td' + id);
     var newel = document.createElement('td');
     var arLen = (document.getElementById('r' + id).getElementsByTagName('td').length - 1) / 2
     var spacer = document.createElement('td');
@@ -33,7 +33,7 @@ function viewRecords(id) {
     }
 
     //h1.appendChild(spacer).setAttribute('style','border:0');
-    
+
     // add the headers
     for (el = 1; el < arLen; el++) {
 
@@ -64,7 +64,7 @@ function viewRecords(id) {
             r2.appendChild(window['newel' + ele + '_2']).setAttribute('style', 'border:0')
         }
     }
-	
+
     //reload();
     //console.log(arr_1.toString())
     //console.log(arr_2.toString())
