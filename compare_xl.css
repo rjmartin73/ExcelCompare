@@ -1,0 +1,98 @@
+﻿ body {
+    font-size: 12.5px;
+}
+/*table {overflow-x: auto;}*/
+
+
+.tr-match {
+    color: rgb(0,97,0);
+    background-color: rgba(198,239,206,0.6);
+}
+
+.tr-nomatch {
+    color: rgb(156, 0, 6);
+    background-color: rgba(255, 199, 206,0.6);
+}
+
+thead {
+    font-weight: bold;
+}
+.container {
+    border: 1px solid black; 
+    height: 750px;
+}
+.maintable {
+   border: 1px solid red;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: auto;
+   display: block;
+   height: inherit;
+}
+
+
+/*
+           CSS3
+        */
+.caption {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    border: 1px solid #eee;
+}
+
+.flexy {
+    display: block;
+    width: 90%;
+    border: 1px solid #eee;
+    height:100%;
+    overflow: auto;
+    float: right;
+}
+
+    .flexy thead {
+        display: -webkit-flex;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+       }
+
+        .flexy thead tr {
+            padding-right: 15px;
+            display: -webkit-flex;
+            width: 100%;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+        }
+        .flexy thead tr td {
+            width: 15%;
+        }
+
+    .flexy tbody {
+        display: -webkit-flex;
+        height: 100%;
+        overflow: auto;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+        .flexy tbody tr {
+            display: -webkit-flex;
+            width: 100%;
+        }
+
+    .flexy tr td {
+        width: 15%;
+    }
+
+    .flexy tbody tr{ 
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+        }
+
+    .flexy tr td {
+        width: 15%;
+    }
+ 
